@@ -46,7 +46,7 @@ db:5432
 
 ## Question 3. Trip Segmentation Count
 
-After data ingestion, writing SQL to find eligible trips.
+After [data ingestion](./data_ingestion.ipynb), writing SQL to find eligible trips.
 
 ```sql
 select sum(case when t.trip_distance <= 1 then 1 else 0 end)                          as cnt1,
