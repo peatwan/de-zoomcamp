@@ -36,12 +36,12 @@ What is hostname in docker compose?
 
 So `db` is the hostname.
 
-For port mapping, the rule is `HOST_PORT:CONTAINER_PORT`. What we need is the host port, which is `5433`
+For port mapping, the rule is `HOST_PORT:CONTAINER_PORT`. Since both services are defined in the same Docker Compose file, they share the same network. Therefore, pgAdmin can refer to the postgres container by its name (`db`) and the specified port (`5432`).
 
 The answer is:
 
 ```
-db:5433
+db:5432
 ```
 
 ## Question 3. Trip Segmentation Count
