@@ -1,0 +1,4 @@
+dlt[filesystem]
+dlt[gs]
+pandas
+pyarrow
