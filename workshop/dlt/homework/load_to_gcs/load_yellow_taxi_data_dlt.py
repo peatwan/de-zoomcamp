@@ -6,7 +6,7 @@ import time
 
 # Constants
 BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-"
-MONTHS = [f"{i:02d}" for i in range(1, 3)]  # January to June
+MONTHS = [f"{i:02d}" for i in range(1, 7)]  # January to June
 
 
 # Function to generate download URLs
